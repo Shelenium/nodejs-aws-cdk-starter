@@ -1,17 +1,17 @@
 #!/usr/bin/env node
-import * as cdk from '@aws-cdk/core';
+import { App, Stack } from 'aws-cdk-lib';
 import { StaticSite } from './static-site';
 
-class MyStaticSiteStack extends cdk.Stack {
-  constructor(parent: cdk.App, name: string) {
+class RssShopCdkStaticSiteStack extends Stack {
+  constructor(parent: App, name: string) {
     super(parent, name);
 
-    new StaticSite(this, 'JSCCStaticWebsite');
+    new StaticSite(this, 'RssShopCdkStaticWebsite');
   }
 }
 
-const app = new cdk.App();
+const app = new App();
 
-new MyStaticSiteStack(app, 'MyJSCCStaticWebsite');
+new RssShopCdkStaticSiteStack(app, 'RssShopCdkStaticWebsite');
 
 app.synth();
