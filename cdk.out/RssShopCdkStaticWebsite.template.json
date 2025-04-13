@@ -176,7 +176,7 @@
      }
     ],
     "SourceObjectKeys": [
-     "d7cdc111c8d49ae29f03b9a0067a4d076f43060f28b3094c3d6c8331aa8ad531.zip"
+     "5215f451a871b6d25e5179fa36e433f108ff20cf1d7666ae59b693c536dd9f12.zip"
     ],
     "DestinationBucketName": {
      "Ref": "RssShopCdkStaticWebsiteRssShopCdkStaticBucketC07B7080"
